@@ -1,0 +1,19 @@
+{
+    "name": "remonhasan/hesh",
+    "description": "This will provide admin authentication and query will save in database.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Remon Hasan",
+            "email": "remon.hasan@technovista.com.bd"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Remonhasan\\Hesh\\": "src/"
+        }
+    }
+}
