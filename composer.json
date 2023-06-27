@@ -9,7 +9,7 @@
             "email": "remon.hasan@technovista.com.bd"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {},
     "autoload": {
         "psr-4": {
