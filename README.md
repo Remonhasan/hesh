@@ -13,3 +13,81 @@
         <img src="https://img.shields.io/packagist/l/remonhasan/hesh" alt="License">
     </a>
 </p>
+
+## Requirements
+
+- PHP >=8.0.2
+
+
+## Installation
+
+To install the most recent version, run the following command.
+
+```php
+  composer require remonhasan/hesh
+```
+Go to composer.json
+
+```php
+   "minimum-stability": "dev",
+```
+
+Go to app.php in config directory
+
+```php
+  'providers' => [
+      Remonhasan\Hesh\HeshServiceProvider::class,
+  ],
+```
+
+Go to auth.php in config directory
+
+```php
+  use Remonhasan\Hesh\Models\Admin;
+
+  'guards' => [
+        'web' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+    ],
+
+     'providers' => [
+        'users' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\User::class,
+        ],
+
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => Admin::class,
+        ],
+    ],
+```
+
+Go to Kernel.php
+
+```php
+  use Remonhasan\Hesh\Middleware\Admin;
+
+   protected $routeMiddleware = [
+        'admin' => Admin::class,
+    ];
+```
+
+Run the migrations
+
+```php
+  php artisan migrate
+```
+
+Start the server by running `php artisan serve` and acces route for registration, login and redirect to dashboard.
+
+```php
+  http://localhost:8000/admin-register
+  http://localhost:8000/admin-login
+```
