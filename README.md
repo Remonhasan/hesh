@@ -92,3 +92,9 @@ Start the server by running `php artisan serve` and acces route for registration
   http://localhost:8000/admin-register
   http://localhost:8000/admin-login
 ```
+
+## License
+
+Hesh is licensed under the [MIT License](http://opensource.org/licenses/MIT).
+
+Copyright 2023 [Remon Hasan](https://www.linkedin.com/in/remonhasan/)
