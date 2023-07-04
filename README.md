@@ -1,3 +1,5 @@
+<p align="center"><img src="/art/logo.svg" alt="Logo Laravel Breeze"></p>
+
 ## Hesh
 
 `Hesh` provides a minimal and simple starting point for building a Laravel application with authentication and a customizable admin dashboard. Styled with Bootstrap, `Hesh` publishes authentication controllers and views to your application that can be easily customized with your own design, template engine and functionalities based on your own application's needs.
