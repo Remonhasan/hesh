@@ -31,6 +31,7 @@ Go to composer.json
 ```php
    "minimum-stability": "dev",
 ```
+Download the zip from the link, extract and paste in your public directory: [Download link](https://drive.google.com/drive/folders/1R-Ffs_kaphGA3-HCv-b213Zg8qFZeIAQ?usp=sharing)
 
 Go to app.php in config directory
 
